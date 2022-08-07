@@ -3,9 +3,10 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: #008080;
 }
-/*Font Imports - Poppins for titles, Montserrat for all others*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+/*Font Imports - Roboto Mono for titles, Montserrat for all others*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
 /*Fonts*/
@@ -13,5 +14,24 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 h1,h2, h3, h4, h5, h6, .title {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+/*Reusable classes*/
+.white-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    margin: 15px 2%;
+}
+.unstyled-list {
+    list-style: none;
+}
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.column-gap {
+    column-gap: 30px;
 }

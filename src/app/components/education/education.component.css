@@ -1,0 +1,5 @@
+@media screen and (max-width: 768px) {
+    .education__list-item {
+        flex-direction: column;
+    }
+}

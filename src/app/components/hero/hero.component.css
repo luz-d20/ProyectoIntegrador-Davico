@@ -18,3 +18,8 @@
     border: 5px solid #fff;
     border-radius: 30px;
 }
+@media screen and (max-width: 768px) {
+    .hero__title {
+        font-size: 2rem;
+    }
+}

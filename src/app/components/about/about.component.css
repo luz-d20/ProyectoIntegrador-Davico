@@ -1,8 +1,35 @@
-.container {
-  margin: auto 3%;
+.prueba {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    box-sizing: border-box;
 }
-/* .about__profilePic {
+.about__profilePic {
   max-width: 250px;
+  float: left;
   border-radius: 50%;
-  margin: -7% auto auto;
-} */
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.about__title {
+  width: 100%;
+  text-align: center;
+  margin-right: 5%;
+}
+.about__title h2 {
+  font-size: 2.5em;
+  margin: 30px auto;
+}
+/*Mobile positioning*/
+@media screen and (max-width: 768px) {
+  .prueba {
+      flex-direction: column;
+  }
+  .about__profilePic {
+    width: auto;
+    float: none;
+  }
+  .about__title {
+    margin: auto;
+  }
+}
