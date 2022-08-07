@@ -1,0 +1,15 @@
+.project__img {
+    max-width: 250px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+}
+.project__column {
+    padding: 0 30px;
+    max-width: 70%;
+}
+@media screen and (max-width: 768px) {
+    .project__column {
+        max-width: 100%;
+        padding: 5px;
+    }
+}
