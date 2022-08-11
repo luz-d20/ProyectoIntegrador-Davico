@@ -31,6 +31,23 @@ h1,h2, h3, h4, h5, h6, .title {
     flex-direction: row;
     flex-wrap: wrap;
 }
+.btn {
+    background-color: #008080;
+    color: #fff;
+    padding: 15px 26px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 3px solid #fff;
+    transition: 0.3s;
+}
+.btn:hover {
+    background-color: #fff;
+    color: #008080;
+    border: 3px solid #008080;
+}
+.fx-space-around {justify-content: space-around;}
 .column-gap {column-gap: 30px;}
 .flex-column {flex-direction: column;}
 .text-center {text-align: center;}
@@ -38,4 +55,9 @@ h1,h2, h3, h4, h5, h6, .title {
     border: 0;
     border-top: 1px solid #ccc;
     margin: 30px;
+}
+@media screen and (max-width: 768px) {
+    li {
+        margin-left: -20px;
+      }    
 }
