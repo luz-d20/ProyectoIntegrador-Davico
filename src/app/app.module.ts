@@ -11,10 +11,19 @@ import { AboutComponent } from './components/about/about.component';
 import { WorkExpComponent } from './components/work-exp/work-exp.component';
 import { EducationComponent } from './components/education/education.component';
 
+import { FormsModule } from '@angular/forms';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import { interceptorProvider } from './service/interceptor-service';
+import { NewExperienciaComponent } from './components/work-exp/new-experiencia.component';
+import { EditExperienciaComponent } from './components/work-exp/edit-experiencia.component';
+import { NewEducacionComponent } from './components/education/new-educacion.component';
 
 @NgModule({
   declarations: [
@@ -28,10 +37,16 @@ import { FooterComponent } from './components/footer/footer.component';
     EducationComponent,
     SkillsComponent,
     ProjectsComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    LoginComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent,
+    NewEducacionComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({
       radius: 100,
@@ -40,9 +55,12 @@ import { FooterComponent } from './components/footer/footer.component';
       outerStrokeColor: "#78C000",
       innerStrokeColor: "#C7E596",
       animationDuration: 300
-    })
+    }),
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

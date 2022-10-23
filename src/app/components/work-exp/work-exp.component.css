@@ -3,3 +3,16 @@
         flex-direction: column;
     }
 }
+.work-exp__list-item {
+    position: relative;
+}
+.edition {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 0.8rem;
+    fill: #008080;
+}
+.edition svg {
+    padding-right: 20px;
+}

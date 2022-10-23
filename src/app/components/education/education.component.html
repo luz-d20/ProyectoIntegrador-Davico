@@ -1,58 +1,23 @@
 <div class="white-box">
     <h2>&#62; Educación</h2>
+    <div>
+        <a class="btn" routerLink="/nuevaedu" *ngIf="isLogged">Añadir educación</a>
+    </div>
     <ul class="unstyled-list">
-        <li class="work-exp__list-item flexbox column-gap">
+        <li class="education__list-item flexbox column-gap" *ngFor="let Educacion of educacion">
             <div>
-                <h3>Arg Prog</h3>
+                <h3>{{Educacion.nombreE}}</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec euismod, nisi eu consectetur consectetur, nisi nisi
-                    consectetur nisi, euismod nisi nisi euismod nisi.
+                    {{Educacion.descripcionE}}
                 </p>
-            </div>
-        </li>
-
-        <li class="work-exp__list-item flexbox column-gap">
-            <div>
-                <h3>Coderhouse Frontend</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec euismod, nisi eu consectetur consectetur, nisi nisi
-                    consectetur nisi, euismod nisi nisi euismod nisi.
-                </p>
-            </div>
-        </li>
-
-        <li class="work-exp__list-item flexbox column-gap">
-            <div>
-                <h3>MSCB</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec euismod, nisi eu consectetur consectetur, nisi nisi
-                    consectetur nisi, euismod nisi nisi euismod nisi.
-                </p>
-            </div>
-        </li>
-
-        <li class="work-exp__list-item flexbox column-gap">
-            <div>
-                <h3>Universidad</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec euismod, nisi eu consectetur consectetur, nisi nisi
-                    consectetur nisi, euismod nisi nisi euismod nisi.
-                </p>
-            </div>
-        </li>
-
-        <li class="work-exp__list-item flexbox column-gap">
-            <div>
-                <h3>Secundaria</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Donec euismod, nisi eu consectetur consectetur, nisi nisi
-                    consectetur nisi, euismod nisi nisi euismod nisi.
-                </p>
+                <div class="edition" *ngIf="isLogged">
+                    <a routerLink="/editedu/{{Educacion.id}}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7.127 22.562l-7.127 1.438 1.438-7.128 5.689 5.69zm1.414-1.414l11.228-11.225-5.69-5.692-11.227 11.227 5.689 5.69zm9.768-21.148l-2.816 2.817 5.691 5.691 2.816-2.819-5.691-5.689z"/></svg>
+                    </a>
+                    <a (click)="delete(Educacion.id)">
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M19 24h-14c-1.104 0-2-.896-2-2v-16h18v16c0 1.104-.896 2-2 2m-9-14c0-.552-.448-1-1-1s-1 .448-1 1v9c0 .552.448 1 1 1s1-.448 1-1v-9zm6 0c0-.552-.448-1-1-1s-1 .448-1 1v9c0 .552.448 1 1 1s1-.448 1-1v-9zm6-5h-20v-2h6v-1.5c0-.827.673-1.5 1.5-1.5h5c.825 0 1.5.671 1.5 1.5v1.5h6v2zm-12-2h4v-1h-4v1z"/></svg> 
+                    </a>
+                </div>
             </div>
         </li>
     </ul>
