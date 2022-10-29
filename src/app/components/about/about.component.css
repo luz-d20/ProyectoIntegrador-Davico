@@ -20,6 +20,7 @@
   font-size: 2.5em;
   margin: 30px auto;
 }
+
 /*Mobile positioning*/
 @media screen and (max-width: 768px) {
   .prueba {
