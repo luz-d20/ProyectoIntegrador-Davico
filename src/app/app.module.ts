@@ -24,6 +24,7 @@ import { interceptorProvider } from './service/interceptor-service';
 import { NewExperienciaComponent } from './components/work-exp/new-experiencia.component';
 import { EditExperienciaComponent } from './components/work-exp/edit-experiencia.component';
 import { NewEducacionComponent } from './components/education/new-educacion.component';
+import { EditEducationComponent } from './components/education/edit-education.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { NewEducacionComponent } from './components/education/new-educacion.comp
     LoginComponent,
     NewExperienciaComponent,
     EditExperienciaComponent,
-    NewEducacionComponent
+    NewEducacionComponent,
+    EditEducationComponent
   ],
   imports: [
     BrowserModule,

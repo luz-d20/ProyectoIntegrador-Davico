@@ -1,3 +1,21 @@
+.education__list-item {
+    position: relative;
+}
+.edition {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 0.8rem;
+    fill: #008080;
+}
+.edition svg {
+    padding-right: 20px;
+    cursor: pointer;
+    fill: teal;
+}
+.edition svg:hover {
+    fill: #00b3b3;
+}
 @media screen and (max-width: 768px) {
     .education__list-item {
         flex-direction: column;

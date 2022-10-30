@@ -5,8 +5,7 @@ import { SExperienciaService } from 'src/app/service/s-experiencia.service';
 
 @Component({
   selector: 'app-new-experiencia',
-  templateUrl: './new-experiencia.component.html',
-  styleUrls: ['./new-experiencia.component.css']
+  templateUrl: './new-experiencia.component.html'
 })
 export class NewExperienciaComponent implements OnInit {
   nombreE: string = "";

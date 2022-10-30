@@ -1,3 +1,8 @@
+/*Font Imports - Roboto Mono for titles, Montserrat for all others*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+
 /*Browser Body Reset*/
 body {
     box-sizing: border-box;
@@ -6,10 +11,6 @@ body {
     background-color: #008080;
     padding-bottom: 150px;
 }
-/*Font Imports - Roboto Mono for titles, Montserrat for all others*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
-
 /*Fonts*/
 * {
     font-family: 'Montserrat', sans-serif;
@@ -135,21 +136,8 @@ a {
     }
     .custom-form > button {
     cursor: pointer;
-    color: #fff;
-    font-size: 16px;
-    text-transform: uppercase;
     width: 100%;
-    border: 0;
-    padding: 10px 0;
-    margin-top: 10px;
-    border-radius: 5px;
-    background-color: #008080;
-    -webkit-transition: background-color 300ms;
-    -moz-transition: background-color 300ms;
-    transition: background-color 300ms;
-    }
-    .custom-form > button:hover {
-    background-color: #008080;
+    border: 3px solid #008080;
     }
     
     @-webkit-keyframes wawes {
@@ -197,6 +185,14 @@ a {
         .custom-form > button {
             width: 100%;
         }
-        
+        .educacion .btn, .workexp .btn {
+            font-size: 00.8rem;
+        }
+        .edition {
+            top: -40px!important;
+        }
+        li[class*="__list-item"] {
+            margin-top: 35px;
+        }
     }
     
