@@ -1,27 +1,38 @@
-# ProyectoIntegradorDavico
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+# Proyecto Integrador Argentina Programa
 
-## Development server
+Hola, bienvenidx! Este es el repositorio del frontend de mi proyecto integrador para el programa nacional **Argentina Programa**. [Está deployeado en Firebase](https://frontend-argprog-davico.web.app/).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Con qué está armado?
 
-## Code scaffolding
+El frontend está construido con Angular, Typescript, HTML y CSS + la librería ng-circle-progress para las skills.
+El backend está construido con Java Spring Boot y MySQL.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Como puedo correrlo?
 
-## Build
+Con `ng serve` podés correr el frontend a nivel local. Luego de correr el comando lo encontrás en `http://localhost:4200/`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Dónde está el código del backend?
+El back está en [otro repo](https://github.com/luz-d20/ProyectoIntegrador-Davico-Backend) con deploy en Heroku.
 
-## Running unit tests
+## Te puedo hacer una consulta?
+Si, obvio! Escribime a mldavico@gmail.com
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+---------------------------------------
+---------------------------------------
+Hello, welcome! This repository holds the frontend side of my final project for the **Argentina Programa** programming course. [It's deployed in Firebase](https://frontend-argprog-davico.web.app/).
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## What is it built with?
+The frontend is built with Angular, Typescript, HTML y CSS + the ng-circle-progress library which I used for skill meters.
+The backend is built with Java Spring Boot & MySQL.
 
-## Further help
+## How can I run it?
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+With `ng serve` you can run the frontend locally. After typing this command you can find it running in  `http://localhost:4200/`.
+
+## Where is the backend code?
+The backend code is in [another repository](https://github.com/luz-d20/ProyectoIntegrador-Davico-Backend) deployed in Heroku.
+
+## Can I ask a question?
+Sure thing! Drop me an email at mldavico@gmail.com
